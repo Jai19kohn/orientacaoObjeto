@@ -1,11 +1,27 @@
 import java.util.Scanner;
 
 public class Calculadora {
+
+    Scanner ler = new Scanner(System.in);
+    String op;
     double valor1;
     double valor2;
     double total;
 
-    Scanner ler = new Scanner(System.in);
+    public void escolhaNumeros(){
+        System.out.println("Escolha o primeiro valor:");
+        valor1 = ler.nextDouble();
+        System.out.println("Escolha o segundo valor:");
+        valor2 = ler.nextDouble();
+        System.out.println("Escolha o operador: \n[1] - \n[2] + \n[3] * \n[4] /");
+        op = ler.next();
+    }
+
+    public void operador(){
+        if (op.equals("1")){
+            subtracao();
+        }
+    }
 
     public void subtracao() {
         total = valor1 - valor2;
