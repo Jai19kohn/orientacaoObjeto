@@ -12,15 +12,15 @@ public class Calculadora {
 
     public void escolhaNumeros(){
         System.out.println("Escolha o primeiro valor:");
-        valor1 = ler.nextDouble();
+        valor1 = Double.parseDouble(ler.nextLine());
         System.out.println("Escolha o segundo valor:");
-        valor2 = ler.nextDouble();
+        valor2 = Double.parseDouble(ler.nextLine());
     }
 
     public void escolhaOperador(){
-
         System.out.println("Escolha o operador: \n[1] - \n[2] + \n[3] * \n[4] /");
-        op = ler.nextDouble();
+        op = Double.parseDouble(ler.nextLine());
+
     }
 
     public void operador() {
@@ -38,12 +38,13 @@ public class Calculadora {
             divisao();
         } else {
             escolhaOperador();
+            operador();
         }
     }
 
     public void repeticao(){
         System.out.println("\nDeseja continuar usando a calculadora? (s/n)");
-        continuar = ler.next();
+        continuar = ler.nextLine();
         if (continuar.equals("s")){
             escolhaNumeros();
             escolhaOperador();
