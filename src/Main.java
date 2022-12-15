@@ -3,5 +3,8 @@ public class Main {
         Calculadora calculadora = new Calculadora();
 
         calculadora.escolhaNumeros();
+        calculadora.escolhaOperador();
+        calculadora.operador();
+        calculadora.repeticao();
     }
 }
