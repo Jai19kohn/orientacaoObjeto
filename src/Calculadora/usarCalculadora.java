@@ -1,3 +1,7 @@
+package Calculadora;
+
+import Calculadora.Calculadora;
+
 public class usarCalculadora {
     public static void main(String[] args) {
 
