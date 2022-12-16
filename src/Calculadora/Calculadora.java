@@ -41,6 +41,7 @@ public class Calculadora {
         } else {
             escolhaOperador();
             operador();
+
         }
     }
 
