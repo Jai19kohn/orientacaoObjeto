@@ -3,7 +3,6 @@ package Boletim;
 import java.util.Scanner;
 
 public class Programa {
-
     String[] nome = {"Jaine", "Jair", "José", "Alberto", "Gustavo"};
     Scanner sc = new Scanner(System.in);
     int numNome;
