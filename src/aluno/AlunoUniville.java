@@ -5,6 +5,15 @@ public class AlunoUniville extends Pessoa {
     private double prova2;
     private double prova3;
 
+    public AlunoUniville(){
+    }
+    public AlunoUniville(String nomeAluno, String matricula, double prova1, double prova2, double prova3) {
+        super(nomeAluno, matricula);
+        this.prova1 = prova1;
+        this.prova2 = prova2;
+        this.prova3 = prova3;
+    }
+
     public double getProva1() {
         return prova1;
     }

@@ -50,4 +50,11 @@ public class AlunoUFSC extends Pessoa{
         }}
         return 0;
     }
+    public AlunoUFSC(){}
+
+    public AlunoUFSC(double prova1, double prova2, double prova3) {
+        this.prova1 = prova1;
+        this.prova2 = prova2;
+        this.prova3 = prova3;
+    }
 }

@@ -6,10 +6,12 @@ public class Principal {
     public static void main(String[] args) {
 
         AlunoUFSC aluno1 = new AlunoUFSC();
+        AlunoUFSC aluno = new AlunoUFSC(1.4, 6.4, 7.8);
         aluno1.setNomeAluno("Jaíne Kohn");
         aluno1.setMatricula("2022-35435");
         aluno1.setProva1(4.5);
         aluno1.setProva2(7.8);
+        aluno1.setProva3(5.6);
 
         System.out.println(aluno1.getNomeAluno());
         System.out.println(aluno1.getMatricula());

@@ -1,8 +1,17 @@
 package aluno;
 
+import java.io.PipedWriter;
+
 public class Pessoa {
     private String nomeAluno;
     private String matricula;
+    public Pessoa(){
+    }
+
+    public Pessoa(String nomeAluno, String matricula) {
+        this.nomeAluno = nomeAluno;
+        this.matricula = matricula;
+    }
 
     public String getNomeAluno() {
         return nomeAluno;
