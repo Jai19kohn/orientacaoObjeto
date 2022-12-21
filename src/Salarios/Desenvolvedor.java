@@ -1,25 +1,42 @@
 package Salarios;
 
-public class Desenvolvedor {
+public class Desenvolvedor extends Pessoa{
+    private double salarioTotal;
     private double horas;
     private double preco = 255;
 
     public Desenvolvedor(){
     }
 
-    public Desenvolvedor(double horas, double preco) {
+    public Desenvolvedor(double salarioTotal, double horas, double preco) {
+        this.salarioTotal = salarioTotal;
         this.horas = horas;
         this.preco = preco;
+    }
+
+    public double resolverSalarioDesen(){
+        setSalarioTotal(getHoras()*getPreco());
+        return getSalarioTotal();
     }
 
     @Override
     public String toString() {
         return "Desenvolvedor{" +
-                "horas=" + horas +
+                "nome=" + super.getNome() +
+                ", telefone=" + super.getTelefone() +
+                ", data de admissão=" + super.getDataAdmissao() +
+                "salarioTotal=" + salarioTotal +
+                ", horas=" + horas +
                 ", preco=" + preco +
                 '}';
     }
 
+    public double getSalarioTotal() {
+        return salarioTotal;
+    }
+    public void setSalarioTotal(double salarioTotal) {
+        this.salarioTotal = salarioTotal;
+    }
     public double getHoras() {
         return horas;
     }

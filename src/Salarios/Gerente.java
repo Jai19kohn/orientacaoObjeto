@@ -1,6 +1,6 @@
 package Salarios;
 
-public class Gerente {
+public class Gerente extends Pessoa{
     private double salarioTotal;
     private double salario;
     private double horas;
@@ -8,18 +8,28 @@ public class Gerente {
 
     public Gerente(){
     }
-    public Gerente(double salario, double horas, int dias) {
+
+    public Gerente(double salarioTotal, double salario, double horas, double dias) {
+        ;
+        this.salarioTotal = salarioTotal;
         this.salario = salario;
         this.horas = horas;
         this.dias = dias;
     }
 
-
+    public double resolverSalarioGerente(){
+        setSalarioTotal(getSalario()*getHoras()*getHoras());
+        return getSalarioTotal();
+    }
 
     @Override
     public String toString() {
         return "Gerente{" +
-                "salario=" + salario +
+                "nome=" + super.getNome() +
+                ", telefone=" + super.getTelefone() +
+                ", data de admissão=" + super.getDataAdmissao() +
+                ", salarioTotal=" + salarioTotal +
+                ", salario=" + salario +
                 ", horas=" + horas +
                 ", dias=" + dias +
                 '}';
