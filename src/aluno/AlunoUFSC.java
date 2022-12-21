@@ -36,6 +36,17 @@ public class AlunoUFSC extends Pessoa{
                 '}';
     }
 
+    public void Aluno(double prova1, double prova2){
+        setProva1(prova1);
+        setProva2(prova2);
+    }
+
+    public void Aluno(double prova1, double prova2, double prova3){
+        setProva1(prova1);
+        setProva2(prova2);
+        setProva3(prova3);
+    }
+
     public double calcMedia(){
         double media = (prova1+prova2)/2;
         if(media>=7){

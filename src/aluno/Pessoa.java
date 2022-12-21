@@ -2,7 +2,7 @@ package aluno;
 
 import java.io.PipedWriter;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nomeAluno;
     private String matricula;
     public Pessoa(){
@@ -29,6 +29,9 @@ public class Pessoa {
         this.matricula = matricula;
     }
 
+    public double calMedia(){
+        return 0;
+    }
     @Override
     public String toString() {
         return "Pessoa{" +

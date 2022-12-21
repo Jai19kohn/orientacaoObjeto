@@ -31,4 +31,5 @@ public class Principal {
         System.out.println(aluno2.toString());
         aluno2.calcMedia();
     }
+
 }

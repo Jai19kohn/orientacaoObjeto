@@ -13,6 +13,11 @@ public class AlunoUniville extends Pessoa {
         this.prova2 = prova2;
         this.prova3 = prova3;
     }
+    public void Aluno(double prova1, double prova2, double prova3){
+        setProva1(prova1);
+        setProva2(prova2);
+        setProva3(prova3);
+    }
 
     public double getProva1() {
         return prova1;
